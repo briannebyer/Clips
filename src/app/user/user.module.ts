@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthModalComponent } from './auth-modal/auth-modal.component';
-
+// import Shared module
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -9,7 +10,9 @@ import { AuthModalComponent } from './auth-modal/auth-modal.component';
     AuthModalComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    // import Shared module
+    SharedModule
   ],
   // export AuthModalComponent to be used
   exports:[
